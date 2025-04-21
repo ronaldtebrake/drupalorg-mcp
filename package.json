@@ -1,0 +1,35 @@
+{
+  "name": "drupalorg-mcp",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldtebrake/drupalorg-mcp.git"
+  },
+  "keywords": ["drupal", "mcp", "api"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldtebrake/drupalorg-mcp/issues"
+  },
+  "homepage": "https://github.com/ronaldtebrake/drupalorg-mcp#readme",
+  "description": "MCP server for Drupal.org API integration",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "axios": "^1.8.4",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "zod": "^3.22.4"
+  }
+}
